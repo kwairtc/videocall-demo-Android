@@ -11,7 +11,7 @@
 ## 配置 AppId
 
 体验 Demo 的功能需要将您在 KRTC 控制台生成的 AppId / AppName / AppSign 自行替换到 Demo 中。
-您可以在 `com.kuaishou.kwairtcdemo.constants` 包名下找到 KWConstants.java 文件中找到下面对应的静态变量进行替换。
+您可以在 `com.kuaishou.kwairtcdemo.constants` 包名下的 KWConstants.java 文件中找到下面对应的静态变量进行替换。
 
 ```
 public static final String APPID = "";    // 替换为您的 AppId
