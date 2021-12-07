@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ks_dp_53"
+        android:layout_marginLeft="@dimen/ks_dp_52"
+        android:layout_marginTop="@dimen/ks_dp_2"
+        android:layout_marginRight="@dimen/ks_dp_52"
+        android:background="@drawable/black_bg">
+
+        <TextView
+            android:id="@+id/hintContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/ks_dp_13"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ks_sp_18"
+            android:text="@string/ks_channel_password_err"/>
+    </RelativeLayout>
+
+</FrameLayout>

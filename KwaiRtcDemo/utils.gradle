@@ -1,0 +1,8 @@
+// eg: 1.0.0(100)
+def getVersionCode() {
+    return "${rootProject.majorVersion}(${rootProject.subVersion})"
+}
+
+ext {
+    getVersionCode = this.&getVersionCode
+}

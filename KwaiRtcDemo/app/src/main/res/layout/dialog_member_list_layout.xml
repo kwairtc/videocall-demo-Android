@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/memberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ks_dp_60"
+        android:background="@drawable/white_bg_half">
+
+        <ImageView
+            android:id="@+id/memDragDown"
+            android:layout_width="@dimen/ks_dp_70"
+            android:layout_height="@dimen/ks_dp_24"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/ks_dp_10"
+            android:src="@drawable/black_20_line_bg" />
+
+        <TextView
+            android:id="@+id/memberValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ks_dp_32"
+            android:layout_marginStart="@dimen/ks_dp_20"
+            android:textSize="@dimen/ks_sp_16"
+            android:textColor="@color/black"
+            android:text="@string/ks_members"/>
+
+        <ImageView
+            android:id="@+id/speator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_dp_1"
+            android:layout_marginTop="@dimen/ks_dp_12"
+            android:layout_below="@+id/memberValue"
+            android:background="@color/black_10"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/member_list"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/speator"
+            android:layout_marginTop="@dimen/ks_dp_7"
+            android:layout_marginBottom="@dimen/ks_dp_10"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+    </RelativeLayout>
+</FrameLayout>
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="@dimen/ks_dp_258"
+        android:background="@drawable/white_bg_half">
+
+        <ImageView
+            android:id="@+id/dragDown"
+            android:layout_width="@dimen/ks_dp_70"
+            android:layout_height="@dimen/ks_dp_24"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ks_dp_8"
+            android:padding="@dimen/ks_dp_10"
+            android:src="@drawable/black_20_line_bg" />
+
+        <TextView
+            android:id="@+id/channelInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dragDown"
+            android:layout_marginTop="@dimen/ks_dp_15"
+            android:layout_marginStart="@dimen/ks_dp_35"
+            android:text="@string/ks_channle_info"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ks_sp_18" />
+
+        <LinearLayout
+            android:id="@+id/channelID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/channelInfo"
+            android:layout_marginTop="@dimen/ks_dp_18"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ks_dp_35"
+                android:text="@string/ks_channel_id_space"
+                android:textSize="@dimen/ks_sp_14"
+                android:textColor="@color/black_50"/>
+
+            <TextView
+                android:id="@+id/copyChannelIDTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/ks_dp_27"
+                android:text="12345"
+                android:drawableRight="@drawable/ic_copy"
+                android:drawablePadding="@dimen/ks_dp_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ks_sp_14"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/copyChannelIDBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_dp_52"
+            android:layout_marginStart="@dimen/ks_dp_12"
+            android:layout_marginEnd="@dimen/ks_dp_12"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/ks_dp_35"
+            android:text="@string/ks_copy_channel_id"
+            android:textSize="@dimen/ks_sp_16"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_blue_bg"/>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+<!--    #E8E8E8 #F7F9FC-->
+    <color name="gray">#E8E8E8</color>
+    <color name="gray2">#F5F5F7</color>
+    <color name="gray3">#999999</color>
+    <color name="gray4">#F0F0F0</color>
+    <color name="gray5">#E0E0E0</color>
+    <color name="black">#000000</color>
+    <color name="black1">#262A2D</color>
+    <color name="black2">#80000000</color>
+    <color name="red">#FF4F38</color>
+    <color name="textBlack">#282A2E</color>
+
+    <color name="blue2">#00A0FE</color>
+    <color name="blue3">#0080FF</color>
+    <color name="white">#ffffff</color>
+    <color name="white_60">#60ffffff</color>
+    <color name="white_75">#75ffffff</color>
+    <color name="white_80">#80ffffff</color>
+    <color name="white_83">#83ffffff</color>
+    <color name="white_90">#90ffffff</color>
+    <color name="white_95">#95ffffff</color>
+    <color name="trans">#00000000</color>
+    <color name="orange">#FF9936</color>
+
+    <color name="blue">#327DFF</color>
+    <color name="blue_20">#20327DFF</color>
+    <color name="blue5">#135DFF</color>
+    <color name="black_5">#05000000</color>
+    <color name="black_10">#10000000</color>
+    <color name="black_20">#20000000</color>
+    <color name="black_30">#30000000</color>
+    <color name="black_50">#50000000</color>
+    <color name="black_60">#60000000</color>
+    <color name="black_64">#64000000</color>
+    <color name="black_90">#90000000</color>
+    <color name="gray_1">#E3E3E3</color>
+
+
+    <color name="red2">#FB3C3C</color>
+</resources>

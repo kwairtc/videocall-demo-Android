@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/ks_dp_40">
+
+            <include
+                android:id="@+id/netErrorHint"
+                layout="@layout/net_error_hint_layout" />
+
+            <ImageView
+                android:id="@+id/goBackBtn"
+                android:layout_width="@dimen/ks_dp_44"
+                android:layout_height="@dimen/ks_dp_44"
+                android:layout_marginStart="@dimen/ks_dp_7"
+                android:onClick="onClickGoBack"
+                android:padding="@dimen/ks_dp_10"
+                android:src="@drawable/ic_left_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/ks_dp_7"
+                android:text="@string/ks_setting"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ks_sp_16" />
+
+            <LinearLayout
+                android:id="@+id/paramLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goBackBtn"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/video_param"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/ks_dp_20"
+                    android:layout_marginTop="@dimen/ks_dp_24"
+                    android:text="@string/ks_video_param"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ks_sp_13" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_1"
+                    android:layout_marginTop="@dimen/ks_dp_11"
+                    android:background="@color/black_10" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_46"
+                    android:layout_marginStart="@dimen/ks_dp_20"
+                    android:layout_marginEnd="@dimen/ks_dp_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ks_video_clarity"
+                        android:textColor="@color/black_50"
+                        android:textSize="@dimen/ks_sp_14" />
+
+                    <LinearLayout
+                        android:id="@+id/resolutionLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/resolutionValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ks_360p"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ks_sp_14" />
+
+                        <ImageView
+                            android:layout_width="@dimen/ks_dp_6"
+                            android:layout_height="@dimen/ks_dp_11"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/ks_dp_6"
+                            android:src="@drawable/ic_right_arrow" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_1"
+                    android:background="@color/black_10" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_46"
+                    android:layout_marginStart="@dimen/ks_dp_20"
+                    android:layout_marginEnd="@dimen/ks_dp_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ks_video_bitrate"
+                        android:textColor="@color/black_50"
+                        android:textSize="@dimen/ks_sp_14" />
+
+                    <TextView
+                        android:id="@+id/bitrateValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ks_bitrate_value"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ks_sp_14" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_1"
+                    android:background="@color/black_10" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_46"
+                    android:layout_marginStart="@dimen/ks_dp_20"
+                    android:layout_marginEnd="@dimen/ks_dp_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ks_video_fps"
+                        android:textColor="@color/black_50"
+                        android:textSize="@dimen/ks_sp_14" />
+
+                    <TextView
+                        android:id="@+id/fpsValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ks_fps_value"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ks_sp_14" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_1"
+                    android:background="@color/black_10" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_8"
+                    android:background="@color/black_5" />
+
+                <TextView
+                    android:id="@+id/audio_param"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/ks_dp_20"
+                    android:layout_marginTop="@dimen/ks_dp_22"
+                    android:layout_marginBottom="@dimen/ks_dp_12"
+                    android:text="@string/ks_audio_param"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ks_sp_13" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_1"
+                    android:background="@color/black_10" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_46"
+                    android:layout_marginStart="@dimen/ks_dp_20"
+                    android:layout_marginEnd="@dimen/ks_dp_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ks_audio_samplerate"
+                        android:textColor="@color/black_50"
+                        android:textSize="@dimen/ks_sp_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="48KHz"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ks_sp_14" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_1"
+                    android:background="@color/black_10" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_1"
+                    android:background="@color/black_10" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_8"
+                    android:background="@color/black_5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/ks_dp_20"
+                    android:layout_marginTop="@dimen/ks_dp_22"
+                    android:layout_marginBottom="@dimen/ks_dp_12"
+                    android:text="@string/ks_version_log"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ks_sp_13" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_1"
+                    android:background="@color/black_10" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ks_dp_46"
+                    android:layout_marginStart="@dimen/ks_dp_20"
+                    android:layout_marginEnd="@dimen/ks_dp_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ks_sdk_ver"
+                        android:textColor="@color/black_50"
+                        android:textSize="@dimen/ks_sp_14" />
+
+                    <TextView
+                        android:id="@+id/sdkVerTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ks_sp_14" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_1"
+                    android:background="@color/black_10" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ks_dp_46"
+                    android:layout_marginStart="@dimen/ks_dp_20"
+                    android:layout_marginEnd="@dimen/ks_dp_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ks_demo_ver"
+                        android:textColor="@color/black_50"
+                        android:textSize="@dimen/ks_sp_14" />
+
+                    <TextView
+                        android:id="@+id/demoVerTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ks_sp_14" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_1"
+                    android:background="@color/black_10" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_46"
+                    android:layout_marginStart="@dimen/ks_dp_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ks_call_real_time_quality"
+                        android:textColor="@color/black_50"
+                        android:textSize="@dimen/ks_sp_14" />
+
+                    <ImageView
+                        android:id="@+id/showQualitySw"
+                        android:layout_width="@dimen/ks_dp_70"
+                        android:layout_height="@dimen/ks_dp_40"
+                        android:layout_alignParentEnd="true"
+                        android:paddingStart="@dimen/ks_dp_15"
+                        android:paddingEnd="@dimen/ks_dp_15"
+                        android:src="@drawable/ic_sw_close" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ks_dp_1"
+                    android:background="@color/black_10" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</layout>

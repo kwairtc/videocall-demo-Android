@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ks_dp_35">
+
+            <ImageView
+                android:id="@+id/goBackBtn"
+                android:layout_width="@dimen/ks_dp_44"
+                android:layout_height="@dimen/ks_dp_44"
+                android:layout_marginStart="@dimen/ks_dp_7"
+                android:layout_centerVertical="true"
+                android:onClick="onClickGoBack"
+                android:padding="@dimen/ks_dp_10"
+                android:src="@drawable/ic_left_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ks_dp_7"
+                android:layout_centerInParent="true"
+                android:text="@string/ks_video_clarity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ks_sp_16" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/speator1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_dp_1"
+            android:layout_marginTop="@dimen/ks_dp_14"
+            android:background="@color/black_10" />
+
+        <RelativeLayout
+            android:id="@+id/relayout360P"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_dp_46"
+            android:layout_marginStart="@dimen/ks_dp_20"
+            android:layout_marginEnd="@dimen/ks_dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/ks_360p"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ks_sp_14" />
+
+            <ImageView
+                android:id="@+id/image360P"
+                android:layout_width="@dimen/ks_dp_14"
+                android:layout_height="@dimen/ks_dp_9"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_selected" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/speator2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_dp_1"
+            android:background="@color/black_10" />
+
+        <RelativeLayout
+            android:id="@+id/relayout540P"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_dp_46"
+            android:layout_marginStart="@dimen/ks_dp_20"
+            android:layout_marginEnd="@dimen/ks_dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/ks_540p"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ks_sp_14" />
+
+            <ImageView
+                android:id="@+id/image540P"
+                android:layout_width="@dimen/ks_dp_14"
+                android:layout_height="@dimen/ks_dp_9"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_selected"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/speator3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_dp_1"
+            android:background="@color/black_10" />
+
+        <RelativeLayout
+            android:id="@+id/relayout720P"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_dp_46"
+            android:layout_marginStart="@dimen/ks_dp_20"
+            android:layout_marginEnd="@dimen/ks_dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/ks_720p"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ks_sp_14" />
+
+            <ImageView
+                android:id="@+id/image720P"
+                android:layout_width="@dimen/ks_dp_14"
+                android:layout_height="@dimen/ks_dp_9"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_selected"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/speator4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_dp_1"
+            android:background="@color/black_10" />
+
+    </LinearLayout>
+</layout>

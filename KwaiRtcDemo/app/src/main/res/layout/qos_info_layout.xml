@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_95"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ks_dp_20"
+        android:layout_marginStart="@dimen/ks_dp_20"
+        android:layout_marginBottom="@dimen/ks_dp_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/ks_cpu_key"
+            android:textSize="@dimen/ks_sp_14"
+            android:textColor="@color/black_50"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/ks_dp_10"
+            android:text="@string/ks_memory_key"
+            android:textSize="@dimen/ks_sp_14"
+            android:textColor="@color/black_50"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/ks_dp_10"
+            android:text="@string/ks_rtt_key"
+            android:textSize="@dimen/ks_sp_14"
+            android:textColor="@color/black_50"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/ks_dp_10"
+            android:text="@string/ks_resolution_key"
+            android:textSize="@dimen/ks_sp_14"
+            android:textColor="@color/black_50"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/ks_dp_10"
+            android:text="@string/ks_video_rt_bitrate_key"
+            android:textSize="@dimen/ks_sp_14"
+            android:textColor="@color/black_50"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/ks_dp_10"
+            android:text="@string/ks_audio_rt_bitrate_key"
+            android:textSize="@dimen/ks_sp_14"
+            android:textColor="@color/black_50"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/ks_dp_10"
+            android:text="@string/ks_rt_loss_key"
+            android:textSize="@dimen/ks_sp_14"
+            android:textColor="@color/black_50"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ks_dp_20"
+        android:layout_marginStart="@dimen/ks_dp_10"
+        android:layout_marginBottom="@dimen/ks_dp_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cpuTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ks_cpu_value"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ks_sp_14" />
+
+        <TextView
+            android:id="@+id/memoryTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ks_dp_10"
+            android:text="@string/ks_memory_value"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ks_sp_14" />
+
+        <TextView
+            android:id="@+id/rttTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ks_dp_10"
+            android:text="@string/ks_rtt_value"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ks_sp_14" />
+
+        <TextView
+            android:id="@+id/videoParamTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ks_dp_10"
+            android:text="@string/ks_video_param_value"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ks_sp_14" />
+
+        <TextView
+            android:id="@+id/videoBitrateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ks_dp_10"
+            android:text="@string/ks_video_rt_bitrate_value"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ks_sp_14" />
+
+        <TextView
+            android:id="@+id/audioBitrateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ks_dp_10"
+            android:text="@string/ks_audio_rt_bitrate_value"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ks_sp_14" />
+
+        <TextView
+            android:id="@+id/lossTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ks_dp_10"
+            android:text="@string/ks_rt_loss_value"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ks_sp_14" />
+
+    </LinearLayout>
+
+</LinearLayout>

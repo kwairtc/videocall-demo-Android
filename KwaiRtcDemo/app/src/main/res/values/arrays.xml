@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="resolution_setting_describe">
+        <item>流畅（360P）</item>
+        <item>标清（540P）</item>
+        <item>高清（720P）</item>
+    </string-array>
+
+    <string-array name="resolution_setting_value">
+        <item>360x640</item>
+        <item>540x960</item>
+        <item>720x1280</item>
+    </string-array>
+
+    <string-array name="bitrate_setting_describe">
+        <item>800</item>
+        <item>1000</item>
+        <item>1500</item>
+    </string-array>
+
+    <integer-array name="bitrate_setting_value">
+        <item>800</item>
+        <item>1000</item>
+        <item>1500</item>
+    </integer-array>
+
+    <integer-array name="min_bitrate_setting_value">
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+    </integer-array>
+
+    <integer-array name="max_bitrate_setting_value">
+        <item>800</item>
+        <item>1200</item>
+        <item>1800</item>
+    </integer-array>
+
+    <string-array name="fps_setting_describe">
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+    </string-array>
+
+    <integer-array name="fps_setting_value">
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+    </integer-array>
+
+</resources>

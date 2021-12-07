@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/memberItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ks_dp_20"
+        android:layout_marginEnd="@dimen/ks_dp_20">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/ks_dp_32"
+                android:layout_height="@dimen/ks_dp_32"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/ks_dp_7"
+                android:layout_marginBottom="@dimen/ks_dp_8"
+                android:src="@drawable/blue_oval_bg"/>
+
+            <TextView
+                android:id="@+id/memNickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ks_sp_10"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_90"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/ks_dp_40"
+            android:textSize="@dimen/ks_sp_14"
+            android:singleLine="true"/>
+
+        <ImageView
+            android:id="@+id/micStateIcon"
+            android:layout_width="@dimen/ks_dp_17"
+            android:layout_height="@dimen/ks_dp_19"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/ks_dp_40"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_mic_open_mem" />
+
+        <ImageView
+            android:id="@+id/cameraStateIcon"
+            android:layout_width="@dimen/ks_dp_22"
+            android:layout_height="@dimen/ks_dp_16"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_camera_open_mem" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/speator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ks_dp_1"
+        android:layout_marginStart="@dimen/ks_dp_20"
+        android:layout_marginEnd="@dimen/ks_dp_20"
+        android:layout_below="@+id/memberItem"
+        android:background="@color/black_10"/>
+</RelativeLayout>

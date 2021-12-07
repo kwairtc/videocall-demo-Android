@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ks_dp_183"
+    android:background="@drawable/white_75_bg_half">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ks_dp_39"
+        android:layout_marginEnd="@dimen/ks_dp_35"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tx_polish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ks_dp_35"
+            android:text="@string/ks_beauty_polish"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ks_sp_14" />
+
+        <com.kuaishou.kwairtcdemo.customview.CustomSeekBar
+            android:id="@+id/smoothnessSeek"
+            style="@style/CustomSeekbarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_dp_30"
+            android:layout_marginStart="@dimen/ks_dp_20"
+            android:progress="50" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/smoothnessLevelTxt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="@dimen/ks_sp_14"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_marginLeft="@dimen/ks_dp_10"-->
+<!--                android:layout_marginRight="@dimen/ks_dp_10"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:text="50"/>-->
+
+        <TextView
+            android:id="@+id/tx_whiten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/ks_dp_35"
+            android:layout_marginTop="@dimen/ks_dp_28"
+            android:text="@string/ks_beauty_whiten"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ks_sp_14" />
+
+        <com.kuaishou.kwairtcdemo.customview.CustomSeekBar
+            android:id="@+id/lighteningSeek"
+            style="@style/CustomSeekbarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ks_dp_30"
+            android:layout_marginStart="@dimen/ks_dp_20"
+            android:layout_marginBottom="@dimen/ks_dp_40"
+            android:progress="50"/>
+
+    </LinearLayout>
+</RelativeLayout>
